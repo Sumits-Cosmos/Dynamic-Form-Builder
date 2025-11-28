@@ -160,6 +160,12 @@ Delete: If a record is deleted in Airtable, the MongoDB record is marked deleted
 
 ## Demo 
 [Demo Video](https://drive.google.com/file/d/1MNbYAjO4tgCXY0nNk1WZUzfiyjCer23I/view?usp=sharing)
+### Screenshots 
+![Dashboard](Frontend/public/assets/img1.png)
+![New Form](Frontend/public/assets/img2.png)
+![Form Preview](Frontend/public/assets/img3.png)
+![Created Form](Frontend/public/assets/img4.png)
+![Form Response](Frontend/public/assets/img5.png)
 
 🏃‍♂️ How to Run
 Ensure MongoDB is running.
@@ -169,3 +175,18 @@ Open Terminal 1: cd Backend && npx nodemon (Runs on port 8080).
 Open Terminal 2: cd Frontend && npm run dev (Runs on port 5173).
 
 Open browser to http://localhost:5173.
+
+## Deployment URL's
+Backend: https://dynamic-form-builder-2l40.onrender.com
+Frontend: https://dynamic-form-builder-34o3zc8vl-sumit-rajs-projects-68298abe.vercel.app/
+
+### After Login
+Try to give this to make a form:
+Form Name: Whatever You Like
+Bases ID: app43hcP50D2ui3Ft
+Tables ID: tblXKPRWFCLw5pVSt
+
+### Critical
+If you get some error while visiting the web app:
+Wait for 50sec and then try again immediately, Happens because of using Render's Free Tier.
+When Backend isn't used for a while, Render puts it to "sleep."
