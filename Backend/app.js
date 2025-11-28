@@ -16,10 +16,22 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
-// FIX: Keep ONLY this specific CORS config
+const allowedOrigins = [
+  'http://localhost:5173',          
+  'https://dynamic-form-builder-ten-omega.vercel.app' 
+];
+
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow your React frontend
-    credentials: true 
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) === -1) {
+      var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true
 }));
 
 app.get('/', (req, res) => {

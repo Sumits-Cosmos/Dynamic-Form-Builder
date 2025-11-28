@@ -159,7 +159,7 @@ Update: If a record is edited in Airtable, the MongoDB answers field updates.
 Delete: If a record is deleted in Airtable, the MongoDB record is marked deletedInAirtable: true (Soft Delete).
 
 ## Demo 
-[text](https://drive.google.com/file/d/1MNbYAjO4tgCXY0nNk1WZUzfiyjCer23I/view?usp=sharing)
+[Demo Video](https://drive.google.com/file/d/1MNbYAjO4tgCXY0nNk1WZUzfiyjCer23I/view?usp=sharing)
 
 🏃‍♂️ How to Run
 Ensure MongoDB is running.
