@@ -31,36 +31,49 @@ Airtable Account
 
 1. Clone the Repository
 git clone https://github.com/Sumits-Cosmos/Dynamic-Form-Builder.git
+
 cd Dynamic-Form-Builder
 
-2. Backend Setup
+3. Backend Setup
 cd Backend
+
 npm install
 
 Create a .env file in the Backend folder:
+
 PORT=8080
+
 MONGO_URI=mongodb://localhost:27017/airtable_form_builder
+
 JWT_SECRET=your_super_secret_key_here
 
 ## Airtable Configuration
+
 AIRTABLE_CLIENT_ID=your_client_id_from_airtable
+
 AIRTABLE_CLIENT_SECRET=your_client_secret_from_airtable
+
 AIRTABLE_REDIRECT_URI=http://localhost:5173/callback
 
 ### Start the backend:
+
 npx nodemon
 
 3. Frontend Setup
-
 cd frontend
+
 npm install
 
 Create a .env file in the Frontend folder:
+
 VITE_API_URL=http://localhost:8080/api
+
 VITE_AIRTABLE_CLIENT_ID=your_client_id_from_airtable
+
 VITE_AIRTABLE_REDIRECT_URI=http://localhost:5173/callback
 
 ### Start the frontend:
+
 npm run dev
 
 ## 🔑 Airtable OAuth Setup Guide
@@ -178,15 +191,21 @@ Open browser to http://localhost:5173.
 
 ## Deployment URL's
 Backend: https://dynamic-form-builder-2l40.onrender.com
+
 Frontend: https://dynamic-form-builder-34o3zc8vl-sumit-rajs-projects-68298abe.vercel.app/
 
 ### After Login
 Try to give this to make a form:
+
 Form Name: Whatever You Like
+
 Bases ID: app43hcP50D2ui3Ft
+
 Tables ID: tblXKPRWFCLw5pVSt
 
 ### Critical
 If you get some error while visiting the web app:
+
 Wait for 50sec and then try again immediately, Happens because of using Render's Free Tier.
+
 When Backend isn't used for a while, Render puts it to "sleep."
